@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nippon Airways</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="login-area">
+        <h1 class="text-center">WELCOME TO US-BANGLA AIRLINES</h1>
+        <div class="submit-area">
+            <h4 class="log-in">Login</h4>
+            <input type="text" class="form-control" placeholder="Enter your mail">
+            <br>
+            <input type="password" class="form-control" placeholder="Enter your password" name="" id="">
+            <br>
+            <button id="login" class="btn-success">Enter</button>
+        </div>
+    </div>
+
+    <div id="transaction-area">
+        <header class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a class="active" href="#">Sign Up</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-content container">
+            <div class="booking-form">
+                <p class="warning"></p>
+                <h3>Booking Flights</h3>
+                <div class="inputs">
+                    <div class="input-group">
+                        <label for="">Flying From</label>
+                        <input class="flying-from inp-style" type="text" name="" placeholder="Dhaka, Bangladesh">
+                    </div>
+                    <div class="input-group">
+                        <label for="">Flying To</label>
+                        <input class="flying-to inp-style" type="text" name="" placeholder="New York, United States">
+                    </div>
+                </div>
+                <div class="inputs">
+                    <div class="input-group">
+                        <label" for="">Departure</label>
+                            <input class="flying-departure inp-style w-100" type="date" name="">
+                    </div>
+                    <div class="input-group">
+                        <label for="">Return</label>
+                        <input class="flying-return inp-style w-100" type="date" name="">
+                    </div>
+                </div>
+
+                <div class="input-group f-class">
+                    <div class="w-100">
+                        <label for="">First Class ($150)</label>
+                        <div class="f-class w-100">
+                            <button class="btn first-class-minus">-</button>
+                            <input class="first-class-ticket-amount inp-style w-100 mx-10" type="number" name="">
+                            <button class="btn first-class-plus">+</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="input-group f-class">
+                    <div class="w-100">
+                        <label for="">Economy ($100)</label>
+                        <div class="f-class">
+                            <button class="btn economy-minus">-</button>
+                            <input class="economy-ticket-amount inp-style  w-100 mx-10" type="number" name="">
+                            <button class="btn economy-plus">+</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="calculations">
+                    <div class="amount">
+                        <div class="left">
+                            <p>Subtotal</p>
+                        </div>
+                        <div class="right">
+                            <p>$<span class="subtotal">00</span></p>
+                        </div>
+                    </div>
+
+                    <div class="amount">
+                        <div class="left">
+                            <p>Charge 10% VAT</p>
+                        </div>
+                        <div class="right">
+                            <p>$ <span class="vat">00</span></p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="amount">
+                        <div class="left">
+                            <h4>Total</h4>
+                        </div>
+                        <div class="right">
+                            <p>$ <span class="total">0</span></p>
+                        </div>
+                    </div>
+                </div>
+                <button id="book-now" class="btn-style book-now">Book Now</button>
+            </div>
+
+            <div class="booking-details">
+                <header>
+                    <h3>You're ready to fly</h3>
+                    <p>Your Flights Details</p>
+                </header>
+
+                <table class="table table-bordered">
+
+                    <tbody>
+
+                        <tr>
+                            <td class="strong">Flying From</td>
+                            <td class="user-flying-from"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="strong">Flying To</td>
+                            <td class="user-flying-to"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="strong">Departure</td>
+                            <td class="user-departure-date"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="strong">Return</td>
+                            <td class="user-return-date"></td>
+                        </tr>
+                        <tr>
+                            <td class="strong">First Class</td>
+                            <td><span class="user-first-class"></span> Tickets</td>
+                        </tr>
+                        <tr>
+                            <td class="strong">Economy</td>
+                            <td><span class="user-economy-class"></span> Tickets</td>
+                        </tr>
+                        <tr class="twopx">
+                            <td class="strong">Subtotal</td>
+                            <td> $ <span class="user-subtotal"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="strong">Vat</td>
+                            <td> $ <span class="user-vat"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="strong">Total</td>
+                            <td> $ <span class="user-total"></span></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="booking-content">
+                <h1>discover <br> around the world</h1>
+                <p>
+                    If you were to search online for US Airways information, you would be directed to the American
+                    Airlines webpage. In October of 2015, the two carriers merged to form the world’s largest airline.
+                    All US Airways flights halted at that time and passengers holding tickets for future flights had
+                    their airfare honored by the parent company, American Airlines. Luckily for you, you don’t have to
+                    worry about all that. You just need to book your travel through Flights.com where you can find great
+                    deals on low-cost airfare for American Airlines.</p>
+            </div>
+            </section>
+
+            <!--Thank You-->
+            <script src="airline.js"></script>
+</body>
+
+</html>
